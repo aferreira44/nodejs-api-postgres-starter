@@ -5,6 +5,7 @@ Include:
 - Docker
 - Swagger Editor
 - Swagger UI
+- Traefik
 
 - Express
 - Nodemon
