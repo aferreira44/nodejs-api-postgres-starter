@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  app:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:docker.andreferreira.me"
+
+  reverse-proxy:
+      image: traefik
+      command: --api --docker.exposedbydefault=false
+      ports:
+        - "80:80"
+        - "8080:8080"
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
