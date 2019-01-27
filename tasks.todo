@@ -1,0 +1,8 @@
+# Tasks Todo
+
+[ ] Add Users model
+[ ] Add Users routes
+[ ] Create Users table
+[ ] Add Users controllers
+[ ] Install mocha for unit tests
+[ ] Write unit tests for Users
